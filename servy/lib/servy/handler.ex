@@ -1,4 +1,6 @@
 defmodule Servy.Handler do
+  def handle(request) do
+  end
 end
 
 request = """
@@ -16,3 +18,7 @@ Content-Length: 20
 
 Bears, Lions, Tigers
 """
+
+response = Servy.Handler.handle(request)
+
+IO.puts(response)
